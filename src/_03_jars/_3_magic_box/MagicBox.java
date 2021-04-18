@@ -25,7 +25,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 * When the user clicks on a secret place, stuff will happen.
 	 * 
 	 * 1. Make the frame respond to mouse clicks.
-	 * 
+	 *
 	 * 2. When the mouse is clicked, use the Media Palace (read the code in the magic_box package) to play sounds, 
 	 *    show images or speak.
 	 * 
@@ -48,6 +48,11 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		} catch (Exception w) {
 			System.err.println(w.getMessage());
 		}
+		JFrame f = new JFrame();
+		JPanel p = new JPanel();
+		f.setVisible(true);
+		f.add(p);
+		
 	}
 
 	private void createUI() {
