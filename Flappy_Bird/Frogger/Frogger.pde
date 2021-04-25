@@ -1,5 +1,4 @@
-int carX =0;
-int carY= 0;
+Car one = new Car();
 int x =500;
 int y=550;
 
@@ -49,11 +48,11 @@ void border(){
  }
  
  if(x>800){
-  x=10;
+  x=790;
  
 }
 if(y<0){
-  y=590;
+  y=10;
  
 }
 
