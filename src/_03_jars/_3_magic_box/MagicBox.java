@@ -80,7 +80,7 @@ MediaPalace p = new MediaPalace();
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-MediaPalace.speak("did you know there is another button around here? Nah, there isnt. ");
+
 try {
 	p.loadImageFromTheInternet("https://c.shld.net/rpx/i/s/i/spin/10151633/prod_1650358312??hei=64&wid=64&qlt=50");
 	p.loadImageFromTheInternet("https://www.google.com/url?sa=i&url=https%3A%2F%2Ffourloko.com%2Fbest-memes-of-2020%2F&psig=AOvVaw2r_czJ2YnHIZYCn3gR4cEL&ust=1619397395450000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjw-MeTmPACFQAAAAAdAAAAABAs");
@@ -99,7 +99,23 @@ try {
 		int i = backgroundImage.getRGB(e.getX(),
 				 e.getY());
 	System.out.println(i);
+	System.out.println(e.getX()+ ","+ e.getY());
+		if(i == -13815242) {
+			MediaPalace.speak("did you know there is another button around here? Nah, there isnt. ");
 		
+			
+		}
+if(e.getX() < 343 + 10 && e.getX() > 343-10 && e.getY() <174 + 10 && e.getY() > 174-10 ) {
+	System.out.println("hi");
+	MediaPalace.speak("wow,  you found the last one. ereh dnuora nottub rehtona si erehT ?");
+
+}
+
+if(e.getX() < 192 + 10 && e.getX() > 192-10 && e.getY() < 856 + 10 && e.getY() > 856-10 ) {
+	System.out.println("hi");
+	MediaPalace.speak("Nice,  you found the next one? But can you find the third one?");
+
+}
 	}
 
 	@Override
