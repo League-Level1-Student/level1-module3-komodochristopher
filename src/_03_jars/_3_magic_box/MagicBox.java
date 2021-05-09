@@ -113,7 +113,7 @@ if(e.getX() < 343 + 10 && e.getX() > 343-10 && e.getY() <174 + 10 && e.getY() > 
 
 if(e.getX() < 192 + 10 && e.getX() > 192-10 && e.getY() < 856 + 10 && e.getY() > 856-10 ) {
 	System.out.println("hi");
-	MediaPalace.speak("Nice,  you found the next one? But can you find the third one?");
+	MediaPalace.speak("Nice,  you found thethe second one. But can you find the third one?");
 
 }
 	}
