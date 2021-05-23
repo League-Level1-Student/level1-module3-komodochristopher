@@ -15,6 +15,12 @@ public class CowTimer {
 	 * variable
 	 */
 
+	public CowTimer (int minutes){
+		
+		this.minutes = minutes;
+		
+	}
+	
 	/* 4. Complete the main method of the CowTimerRunner class */
 
 	private int minutes;
@@ -30,12 +36,23 @@ public class CowTimer {
 		 * of minutes using Thread.sleep(int milliseconds).
 		 */
 
+		
+		for(int i =minutes; i>0; i--) {
+		  Thread.sleep(60000);
+				System.out.println(i);
+		}
+		
+		
 		/*
 		 * 3. When the timer is finished, use the playSound method to play a moo sound.
 		 * You can use the .wav file in the default package, or you can download one
 		 * from freesound.org, then drag it intothe default package.
 		 */
 
+		playSound("_07_cow_timer/moo.wav");
+		
+		
+		
 	}
 
 	private void playSound(String fileName) {
@@ -47,7 +64,7 @@ public class CowTimer {
 		if (System.getProperty("os.name").contains("Windows")) {
 			String cmd = "PowerShell -Command \"Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('"
 					+ words + "');\"";
-			try {
+			try { 
 				Runtime.getRuntime().exec(cmd).waitFor();
 			} catch (Exception e) {
 				e.printStackTrace();
